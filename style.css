@@ -1,0 +1,29 @@
+.project {
+    text-transform: uppercase;
+}
+
+.message {
+    background-color: seashell;
+    color: gray;
+}
+
+.success {
+    border: 2px solid green;
+}
+
+.failure {
+    border: 2px solid red;
+}
+
+.message.success {
+    border: 2px solid goldenrod;
+}
+
+header .item {
+    text-decoration: underline;
+}
+
+body {
+    background-image: url("./images/bg.jpeg");
+    background-repeat: repeat;
+}
