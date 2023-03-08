@@ -18,7 +18,7 @@ body{
     width: 300px;
     flex-direction: column;
     border-radius: 20px;
-    padding: 0.85%;
+    padding: 15px 15px 28px 15px;
     background-color: hsl(0, 0%, 100%); 
 }
 
