@@ -4,7 +4,7 @@ console.log('6+9');
 console.log(`Hello ${4 / 2}`);
 
 /* ================== Data Types ========================
- There are eight basic data types in javascript.
+There are eight basic data types in javascript.
   1. String
   2. Number
   3. Boolean
@@ -39,7 +39,7 @@ console.log(13);
 console.log(true);
 
 /* ============== How to check data type ===========
- typeof operator is used to check the data type of a data
+typeof operator is used to check the data type of a data
  */
 
 console.log(typeof 2.2);
@@ -91,7 +91,7 @@ if (num > 0) {
 /* Create a grade calculator that prints "Distinction" if grade is greater than or equal to 80, "First Division" if grade is greater than or equal to 60 and less than 80, "Second Division" if grade is greater than 50 and less than 60, otherwise "Fail" 
 */
 
-let score = prompt('What score did you get?')
+let score = prompt('What score did you get?');
 if (score >= 80) {
   console.log("Distinction");
 }
@@ -151,6 +151,7 @@ while (start < 20) {
 function printer(name) {
   console.log(`Your Name is ${name}`);
   printer(prompt('Name: '));
+}
 
   function add(num1, num2) {
     return num1 + num2;
@@ -179,7 +180,7 @@ function printer(name) {
   let favorite_animes = ["Death Note", "Steins Gate", "Classroom of Elite"];
   */
 
-  const fruit = ("Banana", "Apple", 123), {id: 1};
+  const fruit = ("Banana", "Apple", 123, {id: 1});
 
   const top_10_movies = [
     {
@@ -190,7 +191,7 @@ function printer(name) {
     {  
       id: 2,
       name: "Before Sunrise",
-      genre: "Romance"
+      genre: "Romance",
     }
   ]
   console.log(top_10_movies[0].name);
