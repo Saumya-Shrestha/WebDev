@@ -310,15 +310,11 @@ console.log(`Your number is ${opposite()}`);
 /** 
 Write a function "evenOrOdd" that takes an integer as an argument and returns "Even" for even numbers and "Odd" for odd numbers
 */
-function evenOrOdd(){
+function evenOrOdd() {
   let num = prompt("Enter a number: ");
-  if(num%2==0)
-    return "Even";
-  else 
-    return "odd";
+  return num % 2 == 0 ? "Even" : "Odd";
 }
 console.log(`Your number is ${evenOrOdd()}`);
-
 
 /** 
 Write a function "addUpto" which takes a number as an argument and add each number upoto the given input number.
