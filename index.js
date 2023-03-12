@@ -208,3 +208,133 @@ function reverseMachine() {
   return reverse;
 }
 console.log(`Reverse: ${reverseMachine()}`);
+
+/** 
+=============== Math methods ===============================
+1. Math.PI
+2. Math.round
+3. Math.pow
+4. Math.sqrt
+5. Math.ceil
+6. Math.floor
+7. Math.random
+*/
+const fruits = {
+  name: "Stawberry"
+}
+
+console.log(Math.PI);
+console.log(Math.round(6.9));
+console.log(Math.pow(2, 3));
+console.log(Math.sqrt(49));
+console.log(Math.ceil(2.4));
+console.log(Math.floor(2.4));
+console.log(Math.random());
+
+
+/** 
+=============================== String Methods =======================
+1. String Length
+2. indexOf
+3. uppercase
+4. lowercase
+5. split
+6. slice
+7. includes
+
+var abc = "abcdefghijklmnopqrstuvwxyz";
+*/
+var abc = "abcdefghijklmnopqrstuvwxyz";
+console.log("String length: ", abc.length);
+console.log("String at: ", abc.indexOf("lmno"));
+
+const name = "Envelope";
+console.log(name.indexOf("lope"));
+
+console.log(abc.toUpperCase());
+console.log(abc.toLowerCase());
+
+let cities = "Kathmandu,Manchester,Delhi,Barcelona";
+let newCities = cities.split(",");
+console.log(newCities);
+
+console.log(cities.slice(0, 9));
+console.log(cities.includes("Kathmandu"));
+
+/** 
+================= Array methods ============================
+1. Convert to string = .toString()
+2. Join items in array = .join("_")
+3. Remove last element = .pop()
+4. Length of array = .length
+5. reverses the order = .reverse
+*/
+console.log(newCities.toString());
+console.log(newCities.join("-"));
+console.log(newCities.length);
+console.log(newCities.reverse());
+
+console.log(newCities.pop());
+console.log(newCities);
+
+console.log(newCities.push("Kathmandu"));
+console.log(newCities);
+/** 
+================= Date Object ===================================
+1. new Date();
+2. Get hour from date object
+3. Get Minutes
+4. get Year
+5. 
+*/
+let currentDate = new Date();
+console.log(currentDate);
+console.log(currentDate.getHours());
+console.log(currentDate.getMinutes());
+console.log(currentDate.getFullYear());
+
+let time = Date.now();
+console.log(new Date(time));
+console.log(Date.now());
+
+/** 
+Write a function "opposite" which takes a number as input and returns the opposite number;
+*/
+function opposite() {
+  let num = prompt("Enter a number: ");
+return -num;
+}
+console.log(`Your number is ${opposite()}`);
+
+
+/** 
+Write a function "evenOrOdd" that takes an integer as an argument and returns "Even" for even numbers and "Odd" for odd numbers
+*/
+function evenOrOdd(){
+  let num = prompt("Enter a number: ");
+  if(num%2==0)
+    return "Even";
+  else 
+    return "odd";
+}
+console.log(`Your number is ${evenOrOdd()}`);
+
+
+/** 
+Write a function "addUpto" which takes a number as an argument and add each number upoto the given input number.
+Example. addUpto(5) = 1 + 2 + 3 + 4 + 5 = 15
+*/
+
+
+
+/** 
+Write a function "vowelCounter" that takes a string as arguments and returns the total number of vowels in that string as output.
+Example: vowelCounter("abcde") = 2
+*/
+
+
+/** 
+write a function "getMiddle" that takes a string as argument. Your job is to return the middle character of the given string. If the string's length is odd, return the middle character and if it is even, return the middle two characters.
+*/
+
+
