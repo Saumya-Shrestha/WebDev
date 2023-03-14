@@ -302,7 +302,7 @@ Write a function "opposite" which takes a number as input and returns the opposi
 */
 function opposite() {
   let num = prompt("Enter a number: ");
-return -num;
+  return -num;
 }
 console.log(`Your number is ${opposite()}`);
 
@@ -316,21 +316,104 @@ function evenOrOdd() {
 }
 console.log(`Your number is ${evenOrOdd()}`);
 
+
 /** 
 Write a function "addUpto" which takes a number as an argument and add each number upoto the given input number.
 Example. addUpto(5) = 1 + 2 + 3 + 4 + 5 = 15
 */
-
-
+function addUpto(num) {
+  let newNum = 0;
+  for (let i = 1; i <= num; i++) {
+    newNum += i;
+  }
+  return newNum;
+}
+let num = prompt("Enter a number: ");
+console.log(`Sum is ${addUpto(num)}`);
 
 /** 
 Write a function "vowelCounter" that takes a string as arguments and returns the total number of vowels in that string as output.
 Example: vowelCounter("abcde") = 2
 */
-
+function vowelCounter(str) {
+  let vowels = "aeiou";
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    let letter = str[i];
+    if (vowels.includes(letter))
+      count++;
+  }
+  return count;
+}
+let str = prompt("Enter a string: ");
+console.log(`vowelCounter(${str}) = ${vowelCounter(str)}`);
 
 /** 
 write a function "getMiddle" that takes a string as argument. Your job is to return the middle character of the given string. If the string's length is odd, return the middle character and if it is even, return the middle two characters.
 */
+function getMiddle(str) {
+  str = str.toString();
+  let midIndex = Math.floor(str.length / 2);
+  if (str.length % 2 == 0)
+    return str[midIndex - 1] + str[midIndex];
+  else
+    return str[midIndex];
+}
+let str1 = prompt("Enter a string: ");
+console.log(`Middle character is: ${getMiddle(str1)}`);
+
+/** 
+Write a function "XO" that checks if a string has same amount of 'x' and 'o'. 
+Output must be boolean. 
+Example: XO("ooxx") = true
+XO(xxoxx) = false
+*/
+function XO(str) {
+  let flag1 = "x";
+  let flag2 = "o";
+  let countx = 0;
+  let counto = 0;
+  for (let i = 0; i < str.length; i++) {
+    let letter = str[i];
+    if (flag1.includes(letter))
+      countx++;
+    if (flag2.includes(letter))
+      counto++;
+  }
+  return countx == counto ? true : false;
+}
+let str2 = prompt("Enter a string: ");
+console.log(`${XO(str2)}`);
+
+/** 
+Implement the facebook like system.
+Write a function "likes" that takes an array as input containing the names of the people who likes an item. It must return the display text as follows:
+
+1. likes([]) = "No one likes this";
+2. likes(["Peter"]) = "Peter likes this"
+3. likes(["Peter", "Jacob"]) = "Peter and Jacob like this"
+4. likes(["Max", "John", "Mark"]) = "Max, John and Mark like this";
+5. likes(["Alex", "Jacob", "Mark", "Max"]) = "Alex, Jacob and 2 others like this"
+*/
+function likes(names) {
+  let size = names.length;
+  if (size == 0)
+    return "No one likes this";
+  else if (size == 1)
+    return names[0] + " likes this";
+  else if (size == 2)
+    return names[0] + " and " + names[1] + "like this";
+  else if (size == 3)
+    return `${names[0]}, ${names[1]}, ${names[2]} likes this`;
+  else
+    return `${names[0]}, ${names[1]}, and ${count - 2} others liked this`;
+}
+
+let count = prompt("Enter the number of users who liked the the post: ");
+let names = [];
+for (let i = 0; i < count; i++) {
+  names.push(prompt("Enter the name: "));
+}
+console.log(likes(names));
 
 
