@@ -104,7 +104,7 @@ else {
 
 /* ================= Logical Operators ====================== 
 1. AND Operator (&&) returns true if all conditions are true
-2. OR Operaor (||) returns true if one of the conditions is true
+2. OR Operator (||) returns true if one of the conditions is true
 3. NOT Operator (!) returns opposite of the given value
 */
 
@@ -614,10 +614,3 @@ function reverse(str) {
 }
 let str = prompt("Enter a sentence: ")
 console.log(`${reverse(str)}`);
-
-
-
-
-
-
-
