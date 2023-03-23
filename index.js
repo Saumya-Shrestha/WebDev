@@ -17,12 +17,12 @@ There are eight basic data types in javascript.
 
 /* ============ String ======================
 Anything inside the quotation marks is a string.
-There are three diffrent types of quotation marks:
+There are three different types of quotation marks:
 1. Double Quotation ("")
 2. Single Quotation ('')
 3. Backtick Quotation (``);
 
-There is no diffrence between 1 and 2. But with backtick quotation we can write javascript quote inside using ${} symbol.
+There is no difference between 1 and 2. But with backtick quotation we can write javascript quote inside using ${} symbol.
 */
 
 
@@ -43,10 +43,10 @@ console.log(typeof 2.2);
 
 /* =============== Variable =================
 */
-let name = "Bones";
-console.log(name);
-console.log(name);
-console.log(name);
+let aname = "Bones";
+console.log(aname);
+console.log(aname);
+console.log(aname);
 
 /* ============== Constant ===================
 */
@@ -67,7 +67,7 @@ else {
   console.log("Don't take an umbrealla");
 }
 
-/* ================ Comparision Operators ====================
+/* ================ Comparison Operators ====================
 1. is greater than (>)
 2. is less than (<)
 3. is equal to (==)
@@ -75,14 +75,14 @@ else {
 5. is greater than or equal to (>=)
 6. is less than or equal to (<=)
 */
-const num = 10;
-if (num > 0) {
+const anum = 10;
+if (anum > 0) {
   console.log("Positive");
 } 
-else if (num < 0) {
+else if (anum < 0) {
   console.log("Negative");
 } 
-lse if (num === 0) {
+else if (anum === 0) {
   console.log("Zero");
 }
 
@@ -345,7 +345,7 @@ function vowelCounter(str) {
   }
   return count;
 }
-let str = prompt("Enter a string: ");
+let astr = prompt("Enter a string: ");
 console.log(`vowelCounter(${str}) = ${vowelCounter(str)}`);
 
 /** 
@@ -359,8 +359,8 @@ function getMiddle(str) {
   else
     return str[midIndex];
 }
-let str1 = prompt("Enter a string: ");
-console.log(`Middle character is: ${getMiddle(str1)}`);
+let astr1 = prompt("Enter a string: ");
+console.log(`Middle character is: ${getMiddle(astr1)}`);
 
 /** 
 Write a function "XO" that checks if a string has same amount of 'x' and 'o'. 
@@ -382,8 +382,8 @@ function XO(str) {
   }
   return countx == counto ? true : false;
 }
-let str2 = prompt("Enter a string: ");
-console.log(`${XO(str2)}`);
+let astr2 = prompt("Enter a string: ");
+console.log(`${XO(astr2)}`);
 
 /** 
 Implement the facebook like system.
@@ -427,10 +427,10 @@ function largest(first, second, third) {
   else
     return third;
 }
-let first = prompt("Enter a number: ");
+let afirst = prompt("Enter a number: ");
 let second = prompt("Enter a number: ");
 let third = prompt("Enter a number: ");
-console.log(`Largest number is ${largest(first, second, third)}`);
+console.log(`Largest number is ${largest(afirst, second, third)}`);
 
 
 /** 
