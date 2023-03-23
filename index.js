@@ -416,4 +416,208 @@ for (let i = 0; i < count; i++) {
 }
 console.log(likes(names));
 
+/** 
+Write a JavaScript program to find the largest of three given integers
+*/
+function largest(first, second, third) {
+  if (first > second && first > third)
+    return first;
+  else if (second > first && second > third)
+    return second;
+  else
+    return third;
+}
+let first = prompt("Enter a number: ");
+let second = prompt("Enter a number: ");
+let third = prompt("Enter a number: ");
+console.log(`Largest number is ${largest(first, second, third)}`);
+
+
+/** 
+Write a function that takes an integer minutes and converts it to seconds.
+Examples
+convert(5) ➞ 300
+convert(3) ➞ 180
+convert(2) ➞ 120
+*/
+function convert(min) {
+  return min * 60;
+}
+let min = prompt("Enter the time in minutes: ");
+console.log(`Time in seconds: ${convert(min)}`);
+
+/** 
+Write a function that takes the base and height of a triangle and return its area.
+triArea(3, 2) ➞ 3
+triArea(7, 4) ➞ 14
+triArea(10, 10) ➞ 50
+The area of a triangle is: (base * height) / 2
+*/
+function area(base, height) {
+  return (base * height) / 2;
+}
+let base = prompt("Enter the base: ");
+let height = prompt("Enter the height: ");
+console.log(`Area of triangle: ${area(base, height)}`);
+
+/** 
+Create a function that takes the age in years and returns the age in days.
+Examples
+calcAge(65) ➞ 23725
+calcAge(0) ➞ 0
+calcAge(20) ➞ 7300
+*/
+function age(years) {
+  return years * 365;
+}
+let years = prompt("Enter your age: ");
+console.log(`Age in days: ${age(years)}`);
+
+/** 
+You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+
+Examples:
+points(1, 1) ➞ 5
+points(7, 5) ➞ 29
+points(38, 8) ➞ 100
+*/
+function points(two, three) {
+  return two * 2 + three * 3;
+}
+let two = prompt("Enter the no. of 2-pointers: ");
+let three = prompt("Enter the no. of 3-pointers: ");s
+console.log(`Total score: ${points(two, three)}`);
+
+/** 
+Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+
+    wins get 3 points
+    draws get 1 point
+    losses get 0 points
+
+  Examples
+
+footballPoints(3, 4, 2) ➞ 13
+footballPoints(5, 0, 2) ➞ 15
+footballPoints(0, 0, 1) ➞ 0
+*/
+function footballPoints(win, draw, lose) {
+  return win * 3 + draw * 1;
+}
+let win = prompt("Enter the no. of wins: ");
+let draw = prompt("Enter the no. of draws: ");
+let lose = prompt("Enter the no. of loses: ");
+console.log(`Total score: ${footballPoints(win, draw, lose)}`);
+
+/** 
+Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
+
+To illustrate:
+
+profitableGamble(0.2, 50, 9)
+
+... should yield true, since the net profit is 1 (0.2 * 50 - 9), and 1 > 0.
+*/
+function profitableGamble(prob, prize, pay) {
+  return (prob * prize > pay ? true : false)
+}
+let prob = prompt("Enter the probability: ");
+let prize = prompt("Enter the prize: ");
+let pay = prompt("Enter the pay: ");
+console.log(`${profitableGamble(prob, prize, pay)}`);
+
+/** 
+A vehicle needs 10 times the amount of fuel than the distance it travels. However, it must always carry a minimum of 100 fuel before setting off.
+
+Create a function which calculates the amount of fuel it needs, given the distance.
+Examples
+
+calculateFuel(15) ➞ 150
+
+calculateFuel(23.5) ➞ 235
+
+calculateFuel(3) ➞ 100
+
+Notes
+    Distance will be a number greater than zero.
+    Return 100 if the calculated fuel turns out to be less than 100.
+*/
+
+
+/** 
+Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+Examples
+
+comp("AB", "CD") ➞ true
+
+comp("ABC", "DE") ➞ false
+
+comp("hello", "edabit") ➞ false
+
+*/
+function comp(str1, str2) {
+  return str1.length == str2.length ? true : false;
+}
+let str1 = prompt("Enter the first string: ");
+let str2 = prompt("Enter the second string: ");
+console.log(`${comp(str1, str2)}`);
+
+
+/** 
+Given two strings, firstName and lastName, return a single string in the format "last, first".
+Examples
+
+concatName("First", "Last") ➞ "Last, First"
+
+concatName("John", "Doe") ➞ "Doe, John"
+
+concatName("Mary", "Jane") ➞ "Jane, Mary"
+*/
+function concatName(first, last) {
+  return last + ", " + first;
+}
+let first = prompt("Enter the first name: ");
+let last = prompt("Enter the last name: ");
+console.log(`"${concatName(first, last)}"`);
+
+/** 
+Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+
+    The person is at least 15 years old.
+    They have parental supervision.
+
+The function accepts two parameters, age and isSupervised. Return a boolean.
+Examples
+
+acceptIntoMovie(14, true) ➞ true
+
+acceptIntoMovie(14, false) ➞ false
+
+acceptIntoMovie(16, false) ➞ true
+
+*/
+function acceptIntoMovie(age, isSupervised) {
+  return age >= 15 || isSupervised == "true" ? true : false;
+}
+let age = prompt("Enter the age: ");
+let isSupervised = prompt("Is the kid supervised? ");
+console.log(`${acceptIntoMovie(age, isSupervised)}`);
+
+
+/** 
+Write a program to reverse a sentence.
+Example: "Hello World" = "World Hello"
+*/
+function reverse(str) {
+  let newStr = str.split(" ");
+  return newStr.reverse().join(" ");
+}
+let str = prompt("Enter a sentence: ")
+console.log(`${reverse(str)}`);
+
+
+
+
+
+
 
