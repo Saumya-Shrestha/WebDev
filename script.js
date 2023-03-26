@@ -40,5 +40,8 @@ movies1[1].style.backgroundColor = "blue";
 let button = document.querySelector(".click");
 button.addEventListener("click", function() {
     document.body.classList.toggle("dark");
-    button.textContent = "Light Mode";
+    if(button.textContent == "Dark Mode")
+        button.textContent = "Light Mode";
+    else
+        button.textContent = "Dark Mode";
 });
