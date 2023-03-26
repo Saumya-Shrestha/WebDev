@@ -24,15 +24,21 @@
 // console.log(movies);
 
 // Query Selector
-let movies = document.querySelector(".moviesList");
-// movies.style.backgroundColor = "red";
-movies.classList.add("big-red");
+// let movies = document.querySelector(".moviesList");
+// // movies.style.backgroundColor = "red";
+// movies.classList.add("big-red");
 
 // Query Selector All
 let movies1 = document.querySelectorAll(".moviesList");
 movies1[1].style.backgroundColor = "blue";
 
 // Event Listener
-document.addEventListener("click", function () {
-    window.alert("You clicked");
+// document.addEventListener("click", function () {
+//     window.alert("You clicked");
+// });
+
+let button = document.querySelector(".click");
+button.addEventListener("click", function() {
+    document.body.classList.toggle("dark");
+    button.textContent = "Light Mode";
 });
