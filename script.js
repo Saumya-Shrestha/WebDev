@@ -31,3 +31,8 @@ movies.classList.add("big-red");
 // Query Selector All
 let movies1 = document.querySelectorAll(".moviesList");
 movies1[1].style.backgroundColor = "blue";
+
+// Event Listener
+document.addEventListener("click", function () {
+    window.alert("You clicked");
+});
