@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.left-side {
+    color: hsl(0, 100%, 100%);;
+    width: 40%;
+}
+
+.main-heading {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.main-content{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.right-side > .message {
+    background-color: hsl(248, 32%, 49%);
+    padding: 15px 20px;
+    color: hsl(0, 100%, 100%);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background-color: hsl(0, 100%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card form input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 4px;
+}
+
+input::placeholder, input {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::active, input::focused {
+    outline: 1px solid hsl(248, 32%, 49%)
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: hsl(0, 100%, 100%);
+    text-transform: uppercase;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.privacy-message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: hsl(246, 25%, 77%);
+}
+
+.privacy-message a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
