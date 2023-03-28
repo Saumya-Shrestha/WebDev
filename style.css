@@ -66,8 +66,8 @@ input::placeholder, input {
     font-family: 'Poppins', sans-serif;
 }
 
-input::active, input::focused {
-    outline: 1px solid hsl(248, 32%, 49%)
+input:hover, input:focus {
+    outline: hsl(248, 32%, 49%) solid 1px;
 }
 
 .input-group {
