@@ -6,7 +6,7 @@ submitButton.addEventListener("click", function (e) {
 
     let firstNameInput = signupForm.firstName;
     if(firstNameInput.value == ""){
-        errors.firstName = "First Name cannot be empty.";   
+        errors.firstName = "First Name cannot be empty.";
     }
 
     let lastNameInput = signupForm.lastName;
