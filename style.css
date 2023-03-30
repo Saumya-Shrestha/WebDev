@@ -94,6 +94,8 @@ input:hover, input:focus {
 
 .input-group.error .message{
     color: hsl(0, 100%, 74%);
+    font-style: italic;
+    text-align: end;
 }
 
 .input-group.error input::placeholder{
