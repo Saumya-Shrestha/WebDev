@@ -88,6 +88,18 @@ input:hover, input:focus {
     margin: 20px;
 }
 
+.input-group.error input {
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.input-group.error .message{
+    color: hsl(0, 100%, 74%);
+}
+
+.input-group.error input::placeholder{
+    color: hsl(0, 100%, 74%);
+}
+
 .button {
     width: 100%;
     padding: 15px 35px;
