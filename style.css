@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -55,6 +55,7 @@ body {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 7px 0 0 rgba(0, 0, 0, 0.18);
+    font-weight: 200;
 }
 
 .card {
@@ -86,20 +87,24 @@ input:hover, input:focus {
 
 .input-group {
     margin: 20px;
+    text-align: end;
+    font-size: 14px;
+    font-style: italic;
 }
 
 .input-group.error input {
-    border: 1px solid hsl(0, 100%, 74%);
-}
-
-.input-group.error .message{
+    border: 2px solid hsl(0, 100%, 74%);
     color: hsl(0, 100%, 74%);
-    font-style: italic;
-    margin-left: 200px;
-    font-size: 12px;
+    background: white url(images/icon-error.svg) 435px no-repeat;
 }
 
-.input-group.error input::placeholder{
+.input-group.error input:hover, .error input:focus, .error input::placeholder {
+    outline: 1px solid hsl(0, 100%, 74%);
+    color:hsl(0, 100%, 74%);
+    opacity: 90%;
+}
+
+.error .message{
     color: hsl(0, 100%, 74%);
 }
 
@@ -118,6 +123,11 @@ input:hover, input:focus {
     text-transform: uppercase;
     box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
+}
+
+.button:hover {
+    opacity: 60%;
+    cursor: pointer;
 }
 
 .privacy-message {
