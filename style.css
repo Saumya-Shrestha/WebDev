@@ -95,11 +95,8 @@ input:hover, input:focus {
 .input-group.error .message{
     color: hsl(0, 100%, 74%);
     font-style: italic;
-<<<<<<< HEAD
     margin-left: 200px;
     font-size: 12px;
-=======
->>>>>>> 4b1fdcbe035e0b6ba2c925c71b1dafa534c3caec
 }
 
 .input-group.error input::placeholder{
