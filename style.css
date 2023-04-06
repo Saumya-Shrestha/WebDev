@@ -66,12 +66,15 @@ label, input {
     padding: 10px 20px;
     background-color: var(--color-veryLightGrayishCyan);
     border: none;
+    font-family: var(--primary-font);
+    color: var(--color-veryDarkCyan);
+    font-size: var(--font-size);
+    text-align: right;
 }
 
 .tips-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .tips-group .button {
@@ -80,9 +83,48 @@ label, input {
     border: none;
     color: var(--color-white);
     font-size: var(--font-input-size);
-    flex: 1;
+    width: calc(33.33% - 20px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: var(--primary-font);
+    border-radius: 10px;
 }
 
-.tips-group input {
-    display: inline;
+.tips-group .button:hover {
+    background-color: var(--color-lightGrayishCyan);
+    color: var(--color-veryDarkCyan);
+    cursor: pointer;
+    transition: all 0.2;
+}
+
+.calculation-result {
+    width: 50%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: var(--color-veryDarkCyan);
+}
+
+.calculation-amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    color: var(--color-lightGrayishCyan);
+    font-size: 18px;
+}
+
+.subtitle {
+    color: var(--color-grayishCyan);
+    font-size: 14px;
+}
+
+.amount {
+    font-size: 30px;
+    color: var(--color-strongCyan);
+}
+
+.button {
+    
 }
