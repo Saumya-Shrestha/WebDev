@@ -55,7 +55,7 @@ label, input {
 }
 
 .input-group label {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--color-darkGrayishCyan);
     margin-bottom: 5px;
     font-weight: 700;
@@ -94,14 +94,17 @@ label, input {
     background-color: var(--color-lightGrayishCyan);
     color: var(--color-veryDarkCyan);
     cursor: pointer;
-    transition: all 0.2;
+    transition: all 0.2s;
 }
 
 .calculation-result {
+    height: auto;
     width: 50%;
     padding: 30px 40px;
     border-radius: 10px;
     background-color: var(--color-veryDarkCyan);
+    display: flex;
+    flex-direction: column;
 }
 
 .calculation-amount {
@@ -125,6 +128,22 @@ label, input {
     color: var(--color-strongCyan);
 }
 
-.button {
-    
+.calculation-result .button {
+    margin-top: auto;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-strongCyan);
+    color: var(--color-veryDarkCyan);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+
+.calculation-result .button:hover{
+    cursor: pointer;
+    background-color: var(--color-lightGrayishCyan);
+    transition: all 0.2s;
+    color: var(--color-darkGrayishCyan);
 }
