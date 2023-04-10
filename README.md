@@ -1,1 +1,0 @@
-# Web Training - Tip Calculator
