@@ -65,10 +65,14 @@ body {
     background-color: var(--color-veryLightGrayishCyan);
 }   
 
+.label-container {
+    margin-top: 40px;
+}
+
 .tips-group {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
