@@ -36,10 +36,11 @@ body {
 
 .calculator-container {
     background-color: var(--color-white);
-    padding: 20px;
+    padding: 40px;
     display: flex;
     gap: 20px;
     width: 50vw;
+    border-radius: 15px;
 }
 
 .calculator-container .calculator {
@@ -51,7 +52,7 @@ label, input {
 }
 
 .input-group {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .input-group label {
@@ -62,15 +63,15 @@ label, input {
 }
 
 .input-group input {
-    width: 100%;
-    padding: 10px 20px;
+    width: 95%;
+    padding: 10px 20px;    
     background-color: var(--color-veryLightGrayishCyan);
     border: none;
     font-family: var(--primary-font);
     color: var(--color-veryDarkCyan);
-    font-size: var(--font-size);
+    font-size: var(--font-input-size);
     text-align: right;
-}
+}   
 
 .tips-group {
     display: flex;
@@ -146,4 +147,16 @@ label, input {
     background-color: var(--color-lightGrayishCyan);
     transition: all 0.2s;
     color: var(--color-darkGrayishCyan);
+}
+
+.dollar-sign {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 20px;
+}
+
+.people-sign {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 20px;
 }
