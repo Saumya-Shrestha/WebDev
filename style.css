@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Space Mono', monospace, serif;
 }
 
 a {
@@ -21,91 +22,113 @@ a {
     --color-veryLightGrayishCyan: hsl(189, 41%, 97%);
     --color-white: hsl(0, 0%, 100%);  
 
-    --font-size: 10px;
+    --font-size: 16px;
     --font-input-size: 24px;
 }
 
 body {
     min-height: 100vh;
-    background-color: var(--color-lightGrayishCyan);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--primary-font);
+    background-color: var(--color-lightGrayishCyan);
 }
 
 .calculator-container {
-    background-color: var(--color-white);
-    padding: 40px;
+    width: 70vw;
     display: flex;
     gap: 20px;
-    width: 50vw;
     border-radius: 15px;
+    background-color: var(--color-white);
 }
 
-.calculator-container .calculator {
+.calculator {
     width: 50%;
-}
-
-label, input {
-    display: block;
-}
-
-.input-group {
-    margin-bottom: 40px;
+    margin: 40px;
 }
 
 .input-group label {
-    font-size: 14px;
+    display: block;
+    font-size: var(--font-size);
     color: var(--color-darkGrayishCyan);
-    margin-bottom: 5px;
-    font-weight: 700;
 }
 
 .input-group input {
-    width: 95%;
-    padding: 10px 20px;    
-    background-color: var(--color-veryLightGrayishCyan);
+    width: 97%;
+    display: block;
+    padding: 10px 20px;
     border: none;
-    font-family: var(--primary-font);
-    color: var(--color-veryDarkCyan);
     font-size: var(--font-input-size);
     text-align: right;
+    border-radius: 4px;
+    color: var(--color-veryDarkCyan);
+    background-color: var(--color-veryLightGrayishCyan);
 }   
 
 .tips-group {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
-.tips-group .button {
-    background-color: var(--color-veryDarkCyan);
-    padding: 10px 30px;
-    border: none;
-    color: var(--color-white);
-    font-size: var(--font-input-size);
+.tips-group input{
+    display: inline-block;
     width: calc(33.33% - 20px);
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-family: var(--primary-font);
-    border-radius: 10px;
+    text-align: center;
+    color: var(--color-veryDarkCyan);
 }
 
-.tips-group .button:hover {
-    background-color: var(--color-lightGrayishCyan);
-    color: var(--color-veryDarkCyan);
+.tip-button {
+    width: calc(33.33% - 20px);
+    padding: 10px 30px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--font-input-size);
+    color: var(--color-white);
+    background-color: var(--color-veryDarkCyan);
+}
+
+.dollar-sign{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 25px;
+}
+
+.people-sign{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 25px;
+}
+
+.input-group input:focus, input:hover{
+    outline: 2px solid var(--color-strongCyan);
     cursor: pointer;
-    transition: all 0.2s;
+}  
+
+.tips-group input:focus{
+    text-align: right;
+    cursor: pointer;
+    background-color: var(--color-veryLightGrayishCyan);
+}
+
+.tip-button:hover{
+    cursor: pointer;
+    color: var(--color-veryDarkCyan);
+    background-color: var(--color-strongCyan);
+    transition: all 0.4s;
 }
 
 .calculation-result {
-    height: auto;
-    width: 50%;
-    padding: 30px 40px;
-    border-radius: 10px;
-    background-color: var(--color-veryDarkCyan);
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin: 40px 40px 40px -40px;
+    padding: 60px 40px;
+    border-radius: 10px;
+    background-color: var(--color-veryDarkCyan);
 }
 
 .calculation-amount {
@@ -125,38 +148,28 @@ label, input {
 }
 
 .amount {
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 36px;
     color: var(--color-strongCyan);
 }
 
-.calculation-result .button {
-    margin-top: auto;
+.reset {
+    margin-top: 100px;
     border-radius: 4px;
     width: 100%;
     padding: 10px 20px;
     border: none;
-    background-color: var(--color-strongCyan);
-    color: var(--color-veryDarkCyan);
     text-transform: uppercase;
-    font-size: 18px;
-    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--color-veryDarkCyan);
+    background-color: var(--color-strongCyan);
+    opacity: 0.15;
 }
 
-.calculation-result .button:hover{
+.reset:hover{
     cursor: pointer;
-    background-color: var(--color-lightGrayishCyan);
+    color: var(--color-veryDarkCyan);
+    background-color: var(--color-strongCyan);
+    opacity: 1;
     transition: all 0.2s;
-    color: var(--color-darkGrayishCyan);
-}
-
-.dollar-sign {
-    position: absolute;
-    margin-top: -35px;
-    margin-left: 20px;
-}
-
-.people-sign {
-    position: absolute;
-    margin-top: -35px;
-    margin-left: 20px;
 }

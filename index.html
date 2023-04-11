@@ -13,27 +13,33 @@
 
       <div class="calculator">
         <div class="input-group">
-          <label for="">Bill</label>
-          <input class="bill" type="text" placeholder="0">
-          <img src="./images/icon-dollar.svg" alt="$" class="dollar-sign">
+          <label for="Bill">
+            Bill
+            <input class="bill" type="text" placeholder="0">
+            <img src="./images/icon-dollar.svg" alt="$" class="dollar-sign">
+          </label>
         </div>
 
         <div class="input-group">
-          <label for="">Select Tip %</label>
           <div class="tips-group">
-            <button class="button">5%</button>
-            <button class="button">10%</button>
-            <button class="button">15%</button>
-            <button class="button">25%</button>
-            <button class="button">50%</button>
-            <input type="text" class="button" placeholder="Custom">
+            <label for="Tip">
+              Select Tip %<br>
+              <button class="tip-button">5%</button>
+              <button class="tip-button">10%</button>
+              <button class="tip-button">15%</button>
+              <button class="tip-button">25%</button>
+              <button class="tip-button">50%</button>
+              <input type="text" class="button" placeholder="Custom">
+            </label> 
           </div>
-        </div>
+      </div>
 
         <div class="input-group">
-          <label for="">Number of People</label>
-          <input type="text" placeholder="0">
-          <img src="./images/icon-person.svg" alt="people" class="people-sign">
+          <label for="People">
+            Number of People:
+            <input class="people" type="text" placeholder="0">
+            <img src="./images/icon-person.svg" alt="people" class="people-sign">
+          </label>
         </div> 
       </div>
 
@@ -54,7 +60,7 @@
           <div class="amount">$32.79</div>
         </div>
 
-        <button class="button">Reset</button>
+        <button class="reset">Reset</button>
       </div>
     </div>
   </body>
